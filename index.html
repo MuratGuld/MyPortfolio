@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Webpage</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link
       rel="stylesheet"
@@ -21,22 +21,21 @@
   </head>
   <body>
     <!-- header -->
-    <div class="navbar sticky">
+    <header class="navbar sticky">
       <div class="header-icon-container">
-        <a class="active" href="homepage.html"><i class="fa fa-home"></i></a>
+        <a class="home-logo" href="#home"><i class="fa fa-home"></i></a>
       </div>
       <div>
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li class="active"><a href="#home">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-    </div>
+    </header>
     <!-- home -->
-    <div id="home" class="content">
+    <section id="home" class="content">
       <p class="title" data-text="Welcome&nbsp;to&nbsp;My&nbsp;Website">
         Welcome&nbsp;to&nbsp;MyWebsite
       </p>
@@ -44,12 +43,15 @@
         <div id="my_image"></div>
         <div class="home-title-container">
           <p>I'm Murat Güldibi</p>
-          <p>I'm a Web Developer</p>
+          <p>
+            I am an ambitious Developer with a passion for technology. I develop
+            web-based applications in front-end and back-end disciplines.
+          </p>
         </div>
       </div>
-    </div>
+    </section>
     <!-- skills -->
-    <div id="skills" class="content">
+    <section id="skills" class="content">
       <p class="section">SKILLS</p>
       <hr />
       <div class="skills-container">
@@ -71,54 +73,49 @@
         </div>
       </div>
       <hr />
-    </div>
+    </section>
     <!-- projects -->
-    <div id="projects" class="content">
+    <section id="projects" class="content">
       <p class="section">PROJECTS</p>
       <hr />
-      <div class="projects-container">
-        <div class="project-section">
-          <img src="./image/clock.png" alt="clock" />
-          <p>Digital Clock App</p>
+      <div class="flip-card-container">
+        <div class="flip-card">
+          <div class="flip-face flip-front">
+            <img src="./image/clock.png" alt="clock" />
+            <p>Digital Clock App</p>
+          </div>
+          <div class="flip-face flip-back"><p>Back</p></div>
         </div>
-        <div class="project-section">
-          <img src="./image/notepad.png" alt="notepad" />
-          <p>Note Taking App</p>
+        <div class="flip-card">
+          <div class="flip-face flip-front">
+            <img src="./image/notepad.png" alt="notepad" />
+            <p>Note Taking App</p>
+          </div>
+          <div class="flip-face flip-back"><p>Back</p></div>
         </div>
-        <div class="project-section">
-          <img src="./image/language.png" alt="learn-language" />
-          <p>Language Learning App</p>
+        <div class="flip-card">
+          <div class="flip-face flip-front">
+            <img src="./image/language.png" alt="learn-language" />
+            <p>Language Learning App</p>
+          </div>
+          <div class="flip-face flip-back"><p>Back</p></div>
         </div>
       </div>
-    </div>
-    <!-- about -->
-    <div id="about" class="content">
-      <p class="section">ABOUT ME</p>
-      <hr />
-      <div class="about-container">
-        <img src="./image/developer-team.png" alt="developer-image" />
-        <p id="about-context">
-          I am an ambitious Developer with a passion for software and
-          technology. I have completed a 12-month "Full Stack Web Development"
-          course. Through focused study I have reached the level of Junior Web
-          Developer. A few months ago, I developed web-based applications using
-          my newly acquired skills and I can develop in front-end and back-end
-          disciplines.
-        </p>
-      </div>
-    </div>
+    </section>
     <!-- contact -->
-    <div id="contact" class="content">
+    <section id="contact" class="content">
       <p class="section">CONTACT</p>
       <hr />
       <div class="contact-container">
         <p><i class="fa-solid fa-phone"></i> +41 76 638 63 15</p>
-        <p><i class="fa-solid fa-envelope"></i> murat.guldibi@hicoders.ch</p>
+        <p>
+          <i class="fa-solid fa-envelope"></i> murat.guldibi@powercoders.org
+        </p>
         <p><i class="fa-solid fa-location-pin"></i> Zürich, Switzerland</p>
       </div>
-    </div>
+    </section>
     <!-- footer -->
-    <div class="footer">
+    <footer class="footer">
       <div>
         <div class="icon-container">
           <a href="https://www.facebook.com/slim.ols.9/"
@@ -133,6 +130,7 @@
         </div>
         <p>Copyright &copy; All Rights Reserved</p>
       </div>
-    </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
