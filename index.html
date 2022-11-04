@@ -25,11 +25,26 @@
       <div class="header-icon-container">
         <a class="home-logo" href="#home"><i class="fa fa-home"></i></a>
       </div>
-      <div>
+      <div id="hamburger-menu">
+        <a class="hamburger-link" href="#home">Home</a>
+        <a class="hamburger-link" href="#skills">Skills</a>
+        <a class="hamburger-link" href="#projects">Projects</a>
+        <a class="hamburger-link" href="#about">About</a>
+        <a class="hamburger-link" href="#contact">Contact</a>
+      </div>
+      <a
+        href="javascript:void(0);"
+        class="icon"
+        onclick="handleHamburgerMenu()"
+      >
+        <i class="fa fa-bars"></i>
+      </a>
+      <div class="navbar-links">
         <ul>
           <li class="active"><a href="#home">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -54,24 +69,112 @@
     <section id="skills" class="content">
       <p class="section">SKILLS</p>
       <hr />
-      <div class="skills-container">
-        <div class="skill-section">
-          <p>FRONT-END</p>
-          <img
-            src="./image/html-css-js.png"
-            alt="frontend"
-            id="frontend-image"
-          />
-        </div>
-        <div class="skill-section">
-          <p>BACK-END</p>
-          <img src="./image/nodejs.png" alt="nodejs-image" id="backend-image" />
-        </div>
-        <div class="skill-section">
-          <p>DATABASE</p>
-          <img src="./image/mysql.png" alt="mysql-image" id="database-image" />
+      <div class="slide-container">
+        <span class="slider-span" id="slider-span-1"></span
+        ><span class="slider-span" id="slider-span-2"></span
+        ><span class="slider-span" id="slider-span-3"></span> ><span
+          class="slider-span"
+          id="slider-span-4"
+        ></span>
+        ><span class="slider-span" id="slider-span-5"></span> ><span
+          class="slider-span"
+          id="slider-span-6"
+        ></span>
+        <div class="image-slider">
+          <div class="slide-div" id="slide-1">
+            <img
+              src="./image/html-css-js.png"
+              alt="image"
+              class="slide-img"
+              id="slide-img-1"
+            />
+            <a
+              href="#slider-span-1"
+              class="slider-button"
+              id="slider-button-1"
+            ></a>
+          </div>
+          <div class="slide-div" id="slide-2">
+            <img
+              src="./image/sass.png"
+              alt="image"
+              class="slide-img"
+              id="slide-img-2"
+            />
+            <a
+              href="#slider-span-2"
+              class="slider-button"
+              id="slider-button-2"
+            ></a>
+          </div>
+          <div class="slide-div" id="slide-3">
+            <img
+              src="./image/bootstrap.png"
+              alt="image"
+              class="slide-img"
+              id="slide-img-3"
+            />
+            <a
+              href="#slider-span-3"
+              class="slider-button"
+              id="slider-button-3"
+            ></a>
+          </div>
+          <div class="slide-div" id="slide-4">
+            <img
+              src="./image/reactJs.png"
+              alt="image"
+              class="slide-img"
+              id="slide-img-4"
+            />
+            <a
+              href="#slider-span-4"
+              class="slider-button"
+              id="slider-button-4"
+            ></a>
+          </div>
+          <div class="slide-div" id="slide-5">
+            <img
+              src="./image/nodejs.png"
+              alt="image"
+              class="slide-img"
+              id="slide-img-5"
+            />
+            <a
+              href="#slider-span-5"
+              class="slider-button"
+              id="slider-button-5"
+            ></a>
+          </div>
+          <div class="slide-div" id="slide-6">
+            <img
+              src="./image/mysql.png"
+              alt="image"
+              class="slide-img"
+              id="slide-img-6"
+            />
+            <a
+              href="#slider-span-6"
+              class="slider-button"
+              id="slider-button-6"
+            ></a>
+          </div>
+          <div class="slide-div" id="slide-7">
+            <img
+              src="./image/java.jpg"
+              alt="image"
+              class="slide-img"
+              id="slide-img-7"
+            />
+            <a
+              href="#slider-span-7"
+              class="slider-button"
+              id="slider-button-7"
+            ></a>
+          </div>
         </div>
       </div>
+
       <hr />
     </section>
     <!-- projects -->
@@ -81,25 +184,99 @@
       <div class="flip-card-container">
         <div class="flip-card">
           <div class="flip-face flip-front">
-            <img src="./image/clock.png" alt="clock" />
-            <p>Digital Clock App</p>
+            <img src="./image/himentors.jpg" alt="himentors" />
+            <p>HiMentors App</p>
           </div>
-          <div class="flip-face flip-back"><p>Back</p></div>
+          <div class="flip-face flip-back">
+            <p>Student tracking system for HiCoders Mentors</p>
+            <p>Technologies & Tools</p>
+            <ul>
+              <li>Material UI</li>
+              <li>ReactJS</li>
+              <li>NodeJS</li>
+              <li>ExpressJS</li>
+              <li>Sequelize</li>
+              <li>Rest API</li>
+              <li>Google Classroom Api</li>
+              <li>
+                <a
+                  href="https://github.com/MuratGuld/himentors-web-client"
+                  target="_blank"
+                  >Github Link For Frontend</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/MuratGuld/himentors-rest-api"
+                  target="_blank"
+                  >Github Link For Backend</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="flip-card">
           <div class="flip-face flip-front">
-            <img src="./image/notepad.png" alt="notepad" />
-            <p>Note Taking App</p>
+            <img src="./image/train.png" alt="notepad" />
+            <p>SBB Expedition Inquiry</p>
           </div>
-          <div class="flip-face flip-back"><p>Back</p></div>
+          <div class="flip-face flip-back">
+            <p>Inquiry application of SBB trips across Switzerland</p>
+            <p>Technologies & Tools</p>
+            <ul>
+              <li>Bootstrap</li>
+              <li>ReactJS</li>
+              <li>Swiss public transport API</li>
+              <li>
+                <a
+                  href="https://github.com/MuratGuld/ReactJS/tree/main/Week%207%20(API%20Final)/SBB%20Expedition%20Inquiry"
+                  target="_blank"
+                  >Github Link</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="flip-card">
           <div class="flip-face flip-front">
-            <img src="./image/language.png" alt="learn-language" />
-            <p>Language Learning App</p>
+            <img src="./image/movie.png" alt="learn-language" />
+            <p>Movie Inventory App</p>
           </div>
-          <div class="flip-face flip-back"><p>Back</p></div>
+          <div class="flip-face flip-back">
+            <p>Application that keeps inventory of movies and their rentals</p>
+            <p>Technologies & Tools</p>
+            <ul>
+              <li>Bootstrap</li>
+              <li>ReactJS</li>
+              <li>ExpressJS</li>
+              <li>NodeJS</li>
+              <li>Sequelize</li>
+              <li>
+                <a
+                  href="https://github.com/MuratGuld/NodeJs/tree/main/Week04/SequelizeImplementation"
+                  target="_blank"
+                  >Github Link</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </section>
+    <!-- about -->
+    <section id="about" class="content">
+      <p class="section">ABOUT ME</p>
+      <hr />
+      <div class="about-container">
+        <img src="./image/developer-team.png" alt="developer-image" />
+        <p id="about-context">
+          I am an ambitious Developer with a passion for software and
+          technology. I have completed a 12-month "Full Stack Web Development"
+          course. Through focused study I have reached the level of Junior Web
+          Developer. A few months ago, I developed web-based applications using
+          my newly acquired skills and I can develop in front-end and back-end
+          disciplines.
+        </p>
       </div>
     </section>
     <!-- contact -->
@@ -121,7 +298,7 @@
           <a href="https://www.facebook.com/slim.ols.9/"
             ><i class="fa-brands fa-facebook"></i
           ></a>
-          <a href="https://twitter.com/Murat__G"
+          <a href="https://twitter.com/MuratGldb"
             ><i class="fa-brands fa-twitter"></i
           ></a>
           <a href="https://www.linkedin.com/in/murat-guldibi-28726922b/"
